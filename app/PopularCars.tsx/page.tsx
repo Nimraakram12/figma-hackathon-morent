@@ -13,7 +13,7 @@ function PopularCars() {
     {
       name: "Nissan GT-R",
       type: "Sport",
-      image: "/images/p2.svg",
+      image: "/images/P2.svg",
       price: "$80.00/day",
       discountPrice: "$100.00",
       specs: { fuel: "80L", transmission: "Manual", passengers: "2 People" },
