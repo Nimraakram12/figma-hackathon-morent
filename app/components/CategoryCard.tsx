@@ -65,7 +65,7 @@ const categorycard = () => {
             <FaRegHeart />
             </div>
           <Image
-            src={"/images/p2.svg"}
+            src={"/images/P2.svg"}
             alt="p2"
             width={100}
             height={100}
