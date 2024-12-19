@@ -1,121 +1,47 @@
-import React from "react";
-
-const Footer: React.FC = () => {
+import React from 'react'
+import Link from "next/link"
+const footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200">
-      <div className="container mx-auto px-4">
-  
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 py-8">
-          
-          <div>
-            <h1 className="text-2xl font-bold text-blue-500">MORENT</h1>
-            <p className="text-sm text-gray-600 mt-2">
+    <>
+      <div className='w-full flex flex-col flex-wrap md:flex-nowrap md:flex-row border-b-2 bg-white'>
+        <div className='w-full md:w-1/4 p-10'>
+        <h1 className="text-2xl font-bold text-blue-600">MORENT</h1>
+            <p className="text-sm text-gray-600 mt-2 w-[250px]">
               Our vision is to provide convenience and help increase your sales business.
             </p>
-          </div>
-
-    
-          <div className="flex flex-wrap justify-between space-x-8">
-      
-            <div>
-              <h2 className="text-lg font-semibold text-gray-800">About</h2>
-              <ul className="mt-2 space-y-1">
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    How it works
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Featured
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Partnership
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Business Relation
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-          
-            <div>
-              <h2 className="text-lg font-semibold text-gray-800">Community</h2>
-              <ul className="mt-2 space-y-1">
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Events
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Podcast
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Invite a friend
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-        
-            <div>
-              <h2 className="text-lg font-semibold text-gray-800">Socials</h2>
-              <ul className="mt-2 space-y-1">
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Discord
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Twitter
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-                    Facebook
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-
-      
-        <div className="mt-8 mb-12 flex flex-col sm:flex-row justify-between items-center border-t border-gray-200 pt-4">
-          <p className="text-sm text-gray-600">
-            © 2022 MORENT. All rights reserved
-          </p>
-          <div className="flex space-x-4 mt-4 sm:mt-0">
-            <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-              Privacy & Policy
-            </a>
-            <a href="#" className="text-sm text-gray-600 hover:text-blue-500">
-              Terms & Condition
-            </a>
-          </div>
+        <div className='w-full md:w-1/4 p-10 flex justify-center items-center flex-col gap-8'>
+        <h2 className='font-semibold text-xl leading-[30px]'>About</h2>
+        <Link href="/" className='text-[#13131399] font-medium'>How it works</Link>
+        <Link href="/" className='text-[#13131399] font-medium'>Featured</Link>
+        <Link href="/" className='text-[#13131399] font-medium'>Partnership</Link>
+        <Link href="/" className='text-[#13131399] font-medium'>Business Relations</Link>
+        </div>
+        <div className='w-full md:w-1/4 p-10 flex justify-center items-center flex-col gap-8'>
+        <h2 className='font-semibold text-xl leading-[30px]'>Community</h2>
+        <Link href="/" className='text-[#13131399] font-medium'>Events</Link>
+        <Link href="/" className='text-[#13131399] font-medium'>Blog</Link>
+        <Link href="/" className='text-[#13131399] font-medium'>Podcast</Link>
+        <Link href="/" className='text-[#13131399] font-medium'>Invite a friend</Link>
+        </div>
+        <div className='w-full md:w-1/4 p-10 flex justify-center items-center flex-col gap-8'>
+        <h2 className='font-semibold text-xl leading-[30px]'>Social</h2>
+        <Link href="/" className='text-[#13131399] font-medium'>Discord</Link>
+        <Link href="/" className='text-[#13131399] font-medium'>Instagram</Link>
+        <Link href="/" className='text-[#13131399] font-medium'>Twitter</Link>
+        <Link href="/" className='text-[#13131399] font-medium'>Facebook</Link>
         </div>
       </div>
-    </footer>
-  );
-};
 
-export default Footer;
+      <div className="w-full flex flex-col md:flex-row justify-between itmes-center p-4 md:p-10">
+        <h2>©2022 MORENT. All rights reserved</h2>
+        <div>
+            <Link href="/" className='mr-4 md:mr-10'>Privacy & Policy</Link>
+            <Link href="/">Terms & Condition</Link>
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default footer

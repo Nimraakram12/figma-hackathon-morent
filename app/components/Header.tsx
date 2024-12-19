@@ -1,36 +1,54 @@
-import React from "react";
-import Image from "next/image";
-
-function Header() {
+import React from 'react'
+import Link from 'next/link';
+import { FaSearch, FaBell, FaCog, FaHeart } from "react-icons/fa";
+import Image from "next/image"
+const header = () => {
   return (
-    <div className="border-b border-gray-300 bg-white shadow-sm">
-      <div className="flex items-center justify-between px-4 py-4 lg:px-6 lg:py-4 lg:h-[141px] h-[288px] lg:w-[1440px] w-[375px] mx-auto">
+    <>
+    <div className="w-full p-6 md:p-14 flex flex-col md:flex-row bg-white">
+      <div className='w-full md:w-1/2 flex flex-col md:flex-row justify-between'>
+        <div className="w-1/5 text-2xl font-bold text-blue-600 mb-4 lg:mb-0">MORENT</div>
+        <div className='w-full md:w-3/5 flex'>
+        <input
+             type="text"
+             placeholder="Search something here"
+             className="w-full rounded-full border border-gray-300 bg-gray-100 py-2 px-4 text-sm text-gray-700 outline-none focus:ring-2 focus:ring-blue-400"
+           />
+           <button className="ml-[-30px] text-gray-500">
+             <FaSearch />
+           </button>
 
-        <div className="flex items-center space-x-2">
-          <div className="h-6 w-6 lg:h-8 lg:w-8 rounded-full bg-purple-500 flex items-center justify-center text-white">
-            <span className="text-sm font-semibold">
-              <Image
-                src="/images/logo.svg"
-                alt="logo"
-                height={24}
-                width={24}
-                className="lg:h-[24px] lg:w-[24px] h-[18px] w-[18px]"
-              />
-            </span>
-          </div>
-          <h1 className="text-sm lg:text-lg font-semibold text-gray-800 text-center">
-            High Fidelity Dashboard - Home Rent
-          </h1>
-        </div>
+           </div>
+      </div>
+      <div className='w-full mt-4 md:mt-0 md:w-1/2 flex justify-center md:justify-end gap-6 items-center'>
+      <Link href="/dashboard">
+      <button className=" text-gray-600 hover:text-blue-600">
+            <FaHeart size={20} />
+          </button>
+          </Link>
+          <Link href="/productDetails">
+          <button className=" text-gray-600 hover:text-blue-600">
+            <FaBell size={20}/>
 
-        
-        <div className="text-xs lg:text-sm text-gray-500 text-center">
-          Last Updated:{" "}
-          <span className="font-medium text-gray-800">8 Aug 2022</span>
-        </div>
+          
+            <span className=" h-2 w-2 rounded-full bg-red-500"></span>
+          </button>
+          </Link>
+  
+          <button className="text-gray-600 hover:text-blue-600">
+            <FaCog size={20} />
+          </button>
+          <Image
+            src="/images/profile.svg"
+            alt="Profile"
+            height={44}
+            width={44}
+            className="rounded-full border border-gray-300"
+          />
       </div>
     </div>
-  );
+    </>
+  )
 }
 
-export default Header;
+export default header
