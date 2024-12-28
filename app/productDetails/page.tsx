@@ -110,7 +110,7 @@ const page = () => {
             
 
             <div className="w-1/2 flex justify-end">
-            <Link href="checkout" className="border bg-[#3563E9] text-white p-4 rounded-lg">
+            <Link href="billing" className="border bg-[#3563E9] text-white p-4 rounded-lg">
             <button>Rent Now</button></Link>
             </div>
 
