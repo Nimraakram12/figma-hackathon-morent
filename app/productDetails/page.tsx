@@ -32,7 +32,7 @@ const page = () => {
             justify-around items-center gap-2 mt-4"
             >
               <Image
-                src={"/images/View1.svg"}
+                src={"/images/view1.svg"}
                 alt="Product"
                 width={100}
                 height={100}
