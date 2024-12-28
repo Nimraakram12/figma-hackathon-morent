@@ -8,8 +8,6 @@ import { FaRegHeart } from "react-icons/fa";
 const card = () => {
   return (
     <>
-    
-    
       <div className="w-full flex flex-col md:flex-row flex-wrap md:flex-nowrap justify-around items-center gap-6 mb-4">
         <div className="w-full md:w-1/4 p-8 bg-white">
           <div className="flex justify-between items-center">
@@ -17,7 +15,7 @@ const card = () => {
               <h2>Koenigsegg</h2>
               <h3 className="text-[#13131399] font-bold text-sm">Sport</h3>
             </div>
-            <FaHeart />
+            <FaHeart className="text-red-500"/>
           </div>
           <Image
             src={"/images/p1.svg"}
@@ -45,7 +43,7 @@ const card = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="">Rent Now</Link>
+              <Link href="/productDetails">Rent Now</Link>
             </button>
           </div>
         </div>
@@ -59,7 +57,7 @@ const card = () => {
             <FaRegHeart />
             </div>
           <Image
-            src={"/images/P2.svg"}
+            src={"/images/p2.svg"}
             alt="p2"
             width={100}
             height={100}
@@ -84,7 +82,7 @@ const card = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="">Rent Now</Link>
+              <Link href="/productDetails">Rent Now</Link>
             </button>
           </div>
         </div>
@@ -96,7 +94,7 @@ const card = () => {
               <h2>Rolls - Royce</h2>
               <h3 className="text-[#13131399] font-bold text-sm">Sport</h3>
             </div>
-            <FaHeart />
+            <FaHeart className="text-red-500" />
             </div>
           <Image
             src={"/images/p3.svg"}
@@ -124,7 +122,7 @@ const card = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="">Rent Now</Link>
+              <Link href="/productDetails">Rent Now</Link>
             </button>
           </div>
         </div>
@@ -138,7 +136,7 @@ const card = () => {
             <FaRegHeart />
             </div>
           <Image
-            src={"/images/p4.svg"}
+            src={"/images/p2.svg"}
             alt="p4"
             width={100}
             height={100}
@@ -163,19 +161,11 @@ const card = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="/">Rent Now</Link>
+              <Link href="/productDetails">Rent Now</Link>
             </button>
-            
           </div>
         </div>
-        
-       
-
-
-    
-      
-          
-          </div>
+      </div>
     </>
   );
 };

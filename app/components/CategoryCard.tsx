@@ -7,23 +7,14 @@ import { FaRegHeart } from "react-icons/fa";
 const categorycard = () => {
   return (
     <>
-     <div className="flex justify-between items-center mt-4">
-          <h2 className="text-2xl font-bold text-gray-400">Recent Cars</h2>
-          <button className="text-blue-500 hover:underline mr-6">
-            <Link href="/productCategory">View All</Link></button>
-            </div>
-    
-
       <div className="w-full flex flex-col md:flex-row justify-around items-center gap-4 mb-4">
-    
         <div className="w-11/12 md:w-1/3 p-4 bg-white">
           <div className="flex justify-between items-center">
-            
             <div>
               <h2>Koenigsegg</h2>
               <h3 className="text-[#13131399] font-bold text-sm">Sport</h3>
             </div>
-            <FaHeart className='text-red-500'/>
+            <FaHeart className='text-red-500' />
           </div>
           <Image
             src={"/images/p1.svg"}
@@ -65,7 +56,7 @@ const categorycard = () => {
             <FaRegHeart />
             </div>
           <Image
-            src={"/images/P2.svg"}
+            src={"/images/p2.svg"}
             alt="p2"
             width={100}
             height={100}
@@ -102,7 +93,7 @@ const categorycard = () => {
               <h2>Rolls - Royce</h2>
               <h3 className="text-[#13131399] font-bold text-sm">Sport</h3>
             </div>
-            <FaRegHeart/>
+            <FaHeart />
             </div>
           <Image
             src={"/images/p3.svg"}
@@ -135,12 +126,6 @@ const categorycard = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center mt-4">
-          <h2 className="text-2xl font-bold text-gray-400">Recommended Cars</h2>
-          <button className="text-blue-500 hover:underline mr-6">
-            <Link href="/productCategory">View All</Link></button>
-            </div>
-    
 
 
       <div className="w-full flex flex-col md:flex-row justify-around items-center gap-4">
@@ -150,10 +135,10 @@ const categorycard = () => {
               <h2>All New Rush</h2>
               <h3 className="text-[#13131399] font-bold text-sm">SUV</h3>
             </div>
-            <FaRegHeart />
+            <FaHeart />
           </div>
           <Image
-            src={"/images/R1.svg"}
+            src={"/images/r1.svg"}
             alt="R1"
             width={100}
             height={100}
@@ -189,10 +174,10 @@ const categorycard = () => {
               <h2>CR -V</h2>
               <h3 className="text-[#13131399] font-bold text-sm">SUV</h3>
             </div>
-            <FaHeart className='text-red-500' />
+            <FaHeart className='text-red-500'/>
             </div>
           <Image
-            src={"/images/R2.svg"}
+            src={"/images/r2.svg"}
             alt="R2"
             width={100}
             height={100}
@@ -229,10 +214,10 @@ const categorycard = () => {
               <h2>All New Terios</h2>
               <h3 className="text-[#13131399] font-bold text-sm">SUV</h3>
             </div>
-            <FaRegHeart />
+            <FaHeart />
             </div>
           <Image
-            src={"/images/R3.svg"}
+            src={"/images/r3.svg"}
             alt="R3"
             width={100}
             height={100}
@@ -261,10 +246,8 @@ const categorycard = () => {
             </button>
           </div>
         </div>
-        
 
       </div>
-  
     </>
   )
 }

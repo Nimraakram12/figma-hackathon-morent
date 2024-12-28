@@ -14,10 +14,10 @@ const recommededcars = () => {
               <h2>All New Rush</h2>
               <h3 className="text-[#13131399] font-bold text-sm">SUV</h3>
             </div>
-            <FaHeart />
+            <FaRegHeart />
           </div>
           <Image
-            src={"/images/R1.svg"}
+            src={"/images/r1.svg"}
             alt="R1"
             width={100}
             height={100}
@@ -42,7 +42,7 @@ const recommededcars = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="">Rent Now</Link>
+              <Link href="/productdetails">Rent Now</Link>
             </button>
           </div>
         </div>
@@ -53,10 +53,10 @@ const recommededcars = () => {
               <h2>CR -V</h2>
               <h3 className="text-[#13131399] font-bold text-sm">SUV</h3>
             </div>
-            <FaRegHeart />
+            <FaHeart className='text-red-500' />
             </div>
           <Image
-            src={"/images/R2.svg"}
+            src={"/images/r2.svg"}
             alt="R2"
             width={100}
             height={100}
@@ -81,7 +81,7 @@ const recommededcars = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="">Rent Now</Link>
+              <Link href="/productdetails">Rent Now</Link>
             </button>
           </div>
         </div>
@@ -93,10 +93,10 @@ const recommededcars = () => {
               <h2>All New Terios</h2>
               <h3 className="text-[#13131399] font-bold text-sm">SUV</h3>
             </div>
-            <FaHeart />
+            <FaRegHeart />
             </div>
           <Image
-            src={"/images/R3.svg"}
+            src={"/images/r3.svg"}
             alt="R3"
             width={100}
             height={100}
@@ -121,7 +121,7 @@ const recommededcars = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="">Rent Now</Link>
+              <Link href="/productdetails">Rent Now</Link>
             </button>
           </div>
         </div>
@@ -132,10 +132,10 @@ const recommededcars = () => {
               <h2>CR- V</h2>
               <h3 className="text-[#13131399] font-bold text-sm">SUV</h3>
             </div>
-            <FaRegHeart />
+            <FaHeart className='text-red-500'/>
             </div>
           <Image
-            src={"/images/R4.svg"}
+            src={"/images/r4.svg"}
             alt="R4"
             width={100}
             height={100}
@@ -160,7 +160,7 @@ const recommededcars = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="">Rent Now</Link>
+              <Link href="/productdetails">Rent Now</Link>
             </button>
           </div>
         </div>
@@ -173,10 +173,10 @@ const recommededcars = () => {
               <h2>MG ZX Exclusice</h2>
               <h3 className="text-[#13131399] font-bold text-sm">Hatchback</h3>
             </div>
-            <FaRegHeart />
+            <FaHeart className='text-red-500'/>
           </div>
           <Image
-            src={"/images/R5.svg"}
+            src={"/images/r5.svg"}
             alt="R5"
             width={100}
             height={100}
@@ -201,7 +201,7 @@ const recommededcars = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="">Rent Now</Link>
+              <Link href="/productdetails">Rent Now</Link>
             </button>
           </div>
         </div>
@@ -212,10 +212,10 @@ const recommededcars = () => {
               <h2>New MG ZS</h2>
               <h3 className="text-[#13131399] font-bold text-sm">SUV</h3>
             </div>
-            <FaHeart />
+            <FaRegHeart />
             </div>
           <Image
-            src={"/images/R6.svg"}
+            src={"/images/r6.svg"}
             alt="R6"
             width={100}
             height={100}
@@ -240,7 +240,7 @@ const recommededcars = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="">Rent Now</Link>
+              <Link href="/productdetails">Rent Now</Link>
             </button>
           </div>
         </div>
@@ -252,10 +252,10 @@ const recommededcars = () => {
               <h2>MG ZX Excite</h2>
               <h3 className="text-[#13131399] font-bold text-sm">Hatchback</h3>
             </div>
-            <FaRegHeart />
+            <FaHeart className='text-red-500' />
             </div>
           <Image
-            src={"/images/R7.svg"}
+            src={"/images/r5.svg"}
             alt="R7"
             width={100}
             height={100}
@@ -280,21 +280,21 @@ const recommededcars = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="">Rent Now</Link>
+              <Link href="/productdetails">Rent Now</Link>
             </button>
           </div>
         </div>
 
-        <div className="w-full md:w-1/4 p-8 ">
+        <div className="w-full md:w-1/4 p-8 bg-white">
           <div className="flex justify-between items-center">
             <div>
               <h2>New MG ZS</h2>
               <h3 className="text-[#13131399] font-bold text-sm">SUV</h3>
             </div>
-            <FaHeart />
+            <FaRegHeart />
             </div>
           <Image
-            src={"/images/R8.svg"}
+            src={"/images/r6.svg"}
             alt="R8"
             width={100}
             height={100}
@@ -319,7 +319,7 @@ const recommededcars = () => {
               <span className="text-[#13131399] font-bold text-sm">day</span>
             </div>
             <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
-              <Link href="#productCategory">Rent Now</Link>
+              <Link href="/productdetails">Rent Now</Link>
             </button>
           </div>
         </div>
